@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""reducer.py"""
+"""reducer_title_occurrences.py"""
 import sys
 import string
 
@@ -24,4 +24,4 @@ for line in sys.stdin:
     cur_count = count
 
 if cur_title:
-  print(cur_title, "\t", cur_count)
+  print(cur_title.strip(), ",", cur_count)

@@ -1,17 +1,16 @@
 #!/usr/bin/python3
-"""mapper.py"""
+"""mapper_title_occurrences.py"""
 import sys
 
 for line in sys.stdin:
   line=line.strip()
-  line=str(line).replace('\"','\'').replace('\\','')
-  splits=line.split("', '")
+  splits=line.split(",")
 
   #first dataset
   title = "-"
 
-  if len(splits)==12:
-    title = splits[1]
+  if len(splits)==9:
+    title = splits[0]
   else:
     continue
 
