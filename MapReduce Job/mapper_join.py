@@ -2,11 +2,12 @@
 """mapper_join.py"""
 import sys
 
+# Preprocessing and splitting each line
 for line in sys.stdin:
   line=line.strip()
   splits=line.split(",")
 
-  #first dataset
+  # First dataset to be joined
   title = "-"
   authors = "-"
   avg_rating = "-"
@@ -16,7 +17,7 @@ for line in sys.stdin:
   publisher = "-"
   publication_date = "-"
 
-  #second dataset
+  # Second dataset to be joined
   counter = "-"
 
   if len(splits)==8:
