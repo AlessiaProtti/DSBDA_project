@@ -9,7 +9,7 @@ for line in sys.stdin:
   #first dataset
   title = "-"
 
-  if len(splits)==9:
+  if len(splits)==8:
     title = splits[0]
   else:
     continue
